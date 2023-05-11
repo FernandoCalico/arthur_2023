@@ -1,0 +1,42 @@
+@use 'variables';
+
+.header {
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 8px;
+    background-color: variables.$backHeaderColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    &__logo{
+        width: 200px;
+        margin-right: 16px;
+    }
+
+    &__text{
+        background-color: variables.$backHeaderTextColor;
+        border-radius: 20px;
+        color: variables.$headerTextColor;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: bolder;
+        padding: 8px 16px;
+    }
+
+    @media (max-width: 640px) {
+        padding: 8px 4px;
+
+        &__logo {
+            width: 130px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}

@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/main.scss">
     <title>Aniversário Arthur 2023</title>
 </head>
 <body>
-    <h1>Aniversário do Arthur</h1>
-
+    <header>
+        <div class="header">
+            <img class="header__logo" src="./images/logohotwheels.png" alt="Logo HotWhells">
+            <p class="header__text">
+                Aniversário Arthur Caliço Vollu Maurício - 4 Anos
+            </p>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <p class="hero__text" data-aos="fade-up" data-aos-duration="3000">
+                Venha brincar, se divertir e comemorar comigo! <br>
+                Faltam: <span id="contador"></span>
+            </p>
+            <div class="infos-bar" data-aos="flip-right" data-aos-duration="3000">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Itaipú - Niterói/RJ
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        01/07/2023 às 13hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Marque sua presença
+                </a>
+            </div>
+        </div>
+    </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
